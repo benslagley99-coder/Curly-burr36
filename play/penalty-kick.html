@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelVault</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="play" data-game="penalty-kick">
+  <main class="player">
+    <div class="player-head" id="play-title"></div>
+    <div class="stage">
+      <canvas id="c" width="960" height="540"></canvas>
+      <div class="hud"><span id="score"></span><span id="best"></span></div>
+      <div class="overlay" id="ov">
+        <div>
+          <h2 id="ov-title">Penalty Kick</h2>
+          <p id="ov-text">Press on the goal to aim, release when the power bar is in the green.</p>
+          <button class="btn" id="start">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="player-info" id="play-info"></div>
+    <div class="game-grid" id="related"></div>
+  </main>
+  <script src="/assets/games.js"></script>
+  <script src="/assets/app.js"></script>
+  <script src="/play/kit.js"></script>
+  <script src="/play/penalty-kick.js"></script>
+</body>
+</html>
